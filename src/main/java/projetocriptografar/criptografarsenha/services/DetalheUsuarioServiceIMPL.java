@@ -4,12 +4,14 @@ package projetocriptografar.criptografarsenha.services;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 import projetocriptografar.criptografarsenha.data.DetalheUsuarioData;
 import projetocriptografar.criptografarsenha.model.UsuarioModel;
 import projetocriptografar.criptografarsenha.repository.UsuarioRepositorty;
 
 import java.util.Optional;
 
+@Component
 public class DetalheUsuarioServiceIMPL implements UserDetailsService {
 
     private final UsuarioRepositorty repository;
